@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proyecto-Final</title>
+        <link href="styles.css" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" href="img/png/logo.png" type="image/svg" sizes="16x16" alt="logo_Rocio">
+    </head>
+
+    <body class="body-day" onscroll="navChange()">
+        <header class="h-index3">
+            <nav class="botonera">
+                <div class="home">
+                    <a href="index.html">
+                        <svg  width="200" height="90" >
+                            <rect x="45" y="5" width="80" height="50"  class="mon1" fill="#767a81de" stroke="#2F3645" stroke-width="2"></rect>
+                            <rect x="50" y="10" width="70" height="40"  class="mon2" fill="#000000" stroke="#2F3645" stroke-width="2"></rect>
+                            <rect x="75" y="55" width="20" height="10"  class="mon1" fill="#767a81de" stroke="#2F3645" stroke-width="2"></rect>
+                
+                            <polygon points="50 70,120 70 ,130 80,40 80" fill="#767a81de" stroke="#2F3645" stroke-width="2" class="mon1" stroke="#2F3645" stroke-width="2"></polygon>
+                            <polygon points="55 72,115 72  ,122 78,48 78" fill="#000000" class="mon2" stroke="#2F3645" ></polygon>
+                
+                            <line x1="55" y1="19" x2="100" y2="19" stroke="transparent" stroke-width="3" class="cod"></line>
+                            <line x1="55" y1="24" x2="100" y2="24" stroke="transparent" stroke-width="3" class="cod"></line>
+                            <line x1="55" y1="29" x2="70" y2="29" stroke="transparent" stroke-width="3" class="cod"></line>
+                
+                            <line x1="55" y1="33" x2="115" y2="33" stroke="transparent" stroke-width="3" class="cod"></line>
+                            <line x1="55" y1="38" x2="115" y2="38" stroke="transparent" stroke-width="3" class="cod"></line>
+                        </svg>
+                    </a>
+                <div>
+                    <ul class="menu">
+                        <li><a href="historia.html" target="_self">HISTORIA</a></li>
+                        <li><a href="juguemos.html" target="_self">JUGUEMOS</a></li>
+                    </ul>
+                </div>
+            </nav>  
+
+            <section class="titular">
+                <div class="texto">
+                    <h1 class="titulo-blanco fondo-azul">JUGUEMOS UN POCO</h1>
+                </div>
+            </section>
+		</header>
+
+        <main>
+            <section class="contenedor">
+                <div class="columna-izq-sobremi">
+                    <h2 id="sobremi">Armemos el rompecabezas y veamos que imagen es...</h2>
+                </div>
+            </section>
+            <section class="juegodeimagenes">
+                <div id="seccionsuperior">
+                    <img src="img/png/Rompe1.png" id="rompe1" class="imagenes" draggable="true">
+                    <img src="img/png/rompe2.png" id="rompe2" class="imagenes" draggable="true">
+                    <img src="img/png/Rompe3.png" id="rompe3" class="imagenes" draggable="true">
+                </div>
+                <div class="espacio-titulo"></div>
+                <div class="cajas">
+                    <div class="cajaHover" id="cajasoltar">
+                        <p>Arrastre y suelte la imagen aquí</p>
+                    </div>
+                    <div class="cajaHover" id="cajasoltar2">
+                        <p>Arrastre y suelte la imagen aquí</p>
+                    </div>
+                    <div class="cajaHover" id="cajasoltar3">
+                        <p>Arrastre y suelte la imagen aquí</p>
+                    </div>
+                </div>
+            </section>
+            <button onclick="reinicio()" class="botonesVideo reinicio" >Reiniciar</button>
+        </main>
+    </body>
+    <script src="script3.js"></script>
+</html>
+
+
